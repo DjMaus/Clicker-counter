@@ -1,0 +1,184 @@
+/* Define theme variables */
+:root {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --button-bg-color: #007bff;
+  --button-text-color: white;
+}
+
+[data-theme='dark'] {
+  --background-color: #333333;
+  --text-color: #ffffff;
+  --button-bg-color: #4caf50;
+  --button-text-color: white;
+
+
+
+}
+.logo {
+  width: 150px; /* Adjust size as needed */
+  margin-bottom: 1rem; /* Add space below the image */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  text-align: center;
+  background: var(--background-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.counter button {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.counter span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.back-to-start-container {
+  position: fixed;
+  bottom: 2rem; /*distance from bottom */
+  left: 50%;
+  transform: translateX(-50%); /* center the element */
+}
+.reset {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.reset:hover {
+  opacity: 0.8;
+}
+.toggle-theme {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.reset:hover,
+.toggle-theme:hover {
+  opacity: 0.8;
+}
+h2 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+.start {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.start:hover {opacity: 0.8
+}
+.click-button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.click-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.start {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.start:hover {
+  opacity: 0.8;
+}
+
+.leaderboard {
+  margin-top: 2rem;
+  text-align: center;
+  background: var(--background-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.leaderboard h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.leaderboard ol {
+  list-style: decimal inside;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+}
+.leaderboard li {
+  margin: 0.5rem 0;
+}
+.reset {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset:hover {
+  opacity: 0.8;
+}
